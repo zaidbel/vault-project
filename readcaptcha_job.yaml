@@ -12,3 +12,5 @@ spec:
         image: harbor.cloudemo.ovh/vault/captcha-reader:v1
         args: ["toto1"]
       restartPolicy: Never
+      imagePullSecrets:
+      - name: harbor
