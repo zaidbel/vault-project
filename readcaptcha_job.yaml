@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: readcaptcha-job-{{RANDOM}}  # <== Replaced by a random string to provide always uniq Jobs (lambdas)
+spec:
+  ttlSecondsAfterFinished: 3600
+  backoffLimit: 1
+  template:
+    spec:
+      containers:
+      - name: readcaptcha
+        image: harbor.cloudemo.ovh/vault/captcha-reader:v1
+        args: ["toto1"]
+      restartPolicy: Never

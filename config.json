@@ -1,9 +1,9 @@
 {
     "topics":[
         {
-            "name": "replace",
+            "name": "readcaptcha",
             "configs": [
-                "replace_job.yaml"
+                "readcaptcha_job.yaml"
             ]
         }
     ]
