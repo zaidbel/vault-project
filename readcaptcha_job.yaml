@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: readcaptcha
-        image: harbor.cloudemo.ovh/vault/captcha-reader:v1
+        image: harbor.cloudemo.ovh/vault/captcha-reader
         args: ["toto1"]
       restartPolicy: Never
       imagePullSecrets:
