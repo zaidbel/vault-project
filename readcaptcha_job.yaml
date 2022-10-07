@@ -10,7 +10,7 @@ spec:
       containers:
       - name: readcaptcha
         image: harbor.cloudemo.ovh/vault/captcha-reader
-        args: {{PAYLOAD}}
+        args: [{{PAYLOAD}}]
       restartPolicy: Never
       imagePullSecrets:
       - name: harbor
